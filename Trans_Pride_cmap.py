@@ -1,13 +1,12 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.colors import ListedColormap
 from matplotlib	import cm
 
 
 def view_colormap(cmap):
-    """Plot a colormap with its grayscale equivalent"""
+    """Plot a colormap"""
     cmap = plt.cm.get_cmap(cmap)
     colors = cmap(np.arange(cmap.N))
     
