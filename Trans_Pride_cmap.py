@@ -16,10 +16,10 @@ def view_colormap(cmap):
     plt.show()
 
 
-top = cm.get_cmap('PiYG', 128)
-bottom = cm.get_cmap('Blues',128)
-newcolors = np.vstack((top(np.linspace(0.25, 0.5, 128)),
-                       bottom(np.linspace(0, 0.5, 128))))
+top = cm.get_cmap('PiYG_r', 128)
+bottom = cm.get_cmap('Blues_r',128)
+newcolors = np.vstack((bottom(np.linspace(0.5, 1, 128)),
+                       top(np.linspace(0.5, 0.75, 128))))
 newcmp = ListedColormap(newcolors, name='trns')
 
 
